@@ -15,45 +15,48 @@ header{
     align-items: center;
 }
 
-header > p{
+.p{
 font-size: 20px;
 }
 
-.pulka{
+#white_line{
     margin-top: 20px;
     background-color: white;
     width: 50px;
     height: 5px;
 }
 
-.facmark{
+.Facebook_mar{
     padding-bottom: 35px;
     font-size: 13px;
 }
 
 .plane{
     padding-bottom: 15px;
+    width: 20%;
 }
 
-.img1, .img2, .img4{
+.blur{
     filter: blur(2px);
     }
 
-.container th .same_img, .container tr .same_img{
+#header_table .img{
 display: block;
+height: 200px;
+width: 200px;
 }
 
-.container{
+#header_table{
     border-collapse: collapse;
     background-color: #fc5151;
     margin-top: 45px;
 }
 
-.container th, .container tr{
+#header_table td{
     width: 200px;
 }
 
-.block1{
+#block1{
 background-color: #1286bf;
 color: white;
 text-align: center;
@@ -64,12 +67,7 @@ flex-direction: column;
 align-items: center;
 }
 
-.p1{
-    font-size: 20px;
-    margin-bottom: 15px;
-}
-
-.kruzok{
+#circle{
     position: relative;
     width: 45px;
     height: 45px;
@@ -77,10 +75,10 @@ align-items: center;
     background-color: #1286bf;
     border: 2px solid white;
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin: 15px 0 50px 0;
 }
 
-.kruzok::after {
+#circle::after {
     content: '';
     position: absolute;
     top: 44%;
@@ -91,7 +89,7 @@ align-items: center;
     transform: translate(-50%, -50%) rotate(45deg);
 }
 
-form::before {
+#block1_form::before {
     content: '';
     position: absolute;
     top: -25px;
@@ -104,7 +102,7 @@ form::before {
     border-bottom: 25px solid white;
 }
 
-.krestik {
+#krestik {
     position: absolute;
     cursor: pointer;
     right: -13px;
@@ -116,8 +114,8 @@ form::before {
     border: 2px solid white;
 }
 
-.krestik::before,
-.krestik::after {
+#krestik::before,
+#krestik::after {
     content: '';
     position: absolute;
     top: 50%;
@@ -127,19 +125,16 @@ form::before {
     background-color: white;
 }
 
-.krestik::before {
+#krestik::before {
     transform: translate(-50%, -50%) rotate(45deg);
 }
 
-.krestik::after {
+#krestik::after {
     transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-.block1 form{
+#block1_form{
     position: relative;
-} 
-
-.div_form1{
     background-color:white;
     color:rgb(153, 148, 148);
     width: 600px;
@@ -148,15 +143,15 @@ form::before {
     padding-top: 40px;
 }
 
-.div_form1 p{
+#block1_form p{
     padding-bottom: 20px;
 }
 
-.div_form1 input::placeholder{
+#block1_form input::placeholder{
     color:rgb(153, 148, 148);
 }
 
-.div_form1 input{
+#block1_form input{
     padding: 15px 20px;
     width: 400px;
     margin-bottom: 7px;
@@ -164,7 +159,7 @@ form::before {
     border-width: 1px;
 }
 
-.block1 button{
+#block1 button{
     background-color: #ff0000;
     color: white;
     border: none;
@@ -175,12 +170,11 @@ form::before {
     cursor: pointer;
 }
 
-.block1 button:active {
+#block1 button:active {
     transform: scale(0.90); 
 }
 
-.block2{
-
+#block2{
     background-color: #2a2a2a;
     color: white;
     text-align: center;
@@ -189,20 +183,63 @@ form::before {
 
 }
 
-.block2 form{
+#form2{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.form2 input{
+#block2_table {
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-collapse: separate;
+}
+
+#block2_table tr{
+    display: flex;
+}
+
+#block2_table td{
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+    border: 3px solid  #808080;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+#block2_table td:last-child{
+    margin-right: 0;
+}
+
+#block2_table a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+#form2 input::placeholder{
+    color: #b6b6b6;
+}
+
+#block2 h3{
+    margin: 25px 0;
+    color: #bfbfbf;
+}
+
+#form2 input{
     padding: 20px 23px;
     width: 554px;
     background-color: #515151;
     border: none;
 }
 
-.form2 button{
+#form2 button{
     background-color: #2a2a2a;
     border-color: #808080;
     color: white;
@@ -214,60 +251,27 @@ form::before {
     border-style: solid;
 }
 
-.form2 button:active {
+#form2 button:active {
     transform: scale(0.90); 
+}
+
+.faceb_twit_img{
+    width: 90%;
+}
+
+#google_img{
+    width: 50%;
+}
+
+#linkedin_img{
+    width: 110%;
 }
 
 footer{
     background-color: #515151;
     text-align: center;
     padding: 35px 0 25px 0;
-}
-
-footer p{
     color: #b6b6b6;
     font-size: 18px;
 }
 
-.table2 {
-    padding-top: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    border-collapse: separate;
-}
-
-.tr_table2{
-    display: flex;
-}
-
-.tr_table2 th{
-    width: 45px;
-    height: 45px;
-    padding: 5px;
-    border: 3px solid  #808080;
-    border-radius: 5px;
-    margin-right: 20px;
-}
-
-.tr_table2 th:last-child{
-    margin-right: 0;
-}
-
-.tr_table2 th a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-}
-
-.form2 input::placeholder{
-    color: #b6b6b6;
-}
-
-.block2 h3{
-    margin: 25px 0;
-    color: #bfbfbf;
-}
